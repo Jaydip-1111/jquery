@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <script src="jquery-3.6.4.min.js" ></script>
+    <style>
+            #btn{
+                  position: relative;
+                  left: 950px;
+            }
+            .img1{
+                    width: 700px;
+                    height: 500px;
+            }
+    </style>
+
+</head>
+<body>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident! Omnis officiis odit quaerat rerum nostrum, tempore commodi fugiat voluptate, doloribus, asperiores nemo nesciunt? Veniam, delectus hic quos illo nobis doloremque voluptatum debitis, earum dolorem voluptas dolore voluptatem. Qui quaerat facilis itaque beatae aliquid debitis totam quia consequuntur eligendi minus voluptates at odit animi, obcaecati ex ipsum non excepturi consequatur perferendis! Facere itaque sequi ex, id est minus rem nisi quidem esse velit excepturi expedita praesentium nam voluptatem harum maiores placeat sunt alias suscipit temporibus labore doloribus vero maxime? Minus doloribus minima neque deserunt! Minus, asperiores. Eligendi blanditiis reprehenderit excepturi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident! Omnis officiis odit quaerat rerum nostrum, tempore commodi fugiat voluptate, doloribus, asperiores nemo nesciunt? Veniam, delectus hic quos illo nobis doloremque voluptatum debitis, earum dolorem voluptas dolore voluptatem. Qui quaerat facilis itaque beatae aliquid debitis totam quia consequuntur eligendi minus voluptates at odit animi, obcaecati ex ipsum non excepturi consequatur perferendis! Facere itaque sequi ex, id est minus rem nisi quidem esse velit excepturi expedita praesentium nam voluptatem harum maiores placeat sunt alias suscipit temporibus labore doloribus vero maxime? Minus doloribus minima neque deserunt! Minus, asperiores. Eligendi blanditiis reprehenderit excepturi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident! Omnis officiis odit quaerat rerum nostrum, tempore commodi fugiat voluptate, doloribus, asperiores nemo nesciunt? Veniam, delectus hic quos illo nobis doloremque voluptatum debitis, earum dolorem voluptas dolore voluptatem. Qui quaerat facilis itaque beatae aliquid debitis totam quia consequuntur eligendi minus voluptates at odit animi, obcaecati ex ipsum non excepturi consequatur perferendis! Facere itaque sequi ex, id est minus rem nisi quidem esse velit excepturi expedita praesentium nam voluptatem harum maiores placeat sunt alias suscipit temporibus labore doloribus vero maxime? Minus doloribus minima neque deserunt! Minus, asperiores. Eligendi blanditiis reprehenderit excepturi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident! Omnis officiis odit quaerat rerum nostrum, tempore commodi fugiat voluptate, doloribus, asperiores nemo nesciunt? Veniam, delectus hic quos illo nobis doloremque voluptatum debitis, earum dolorem voluptas dolore voluptatem. Qui quaerat facilis itaque beatae aliquid debitis totam quia consequuntur eligendi minus voluptates at odit animi, obcaecati ex ipsum non excepturi consequatur perferendis! Facere itaque sequi ex, id est minus rem nisi quidem esse velit excepturi expedita praesentium nam voluptatem harum maiores placeat sunt alias suscipit temporibus labore doloribus vero maxime? Minus doloribus minima neque deserunt! Minus, asperiores. Eligendi blanditiis reprehenderit excepturi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident! Omnis officiis odit quaerat rerum nostrum, tempore commodi fugiat voluptate, doloribus, asperiores nemo nesciunt? Veniam, delectus hic quos illo nobis doloremque voluptatum debitis, earum dolorem voluptas dolore voluptatem. Qui quaerat facilis itaque beatae aliquid debitis totam quia consequuntur eligendi minus voluptates at odit animi, obcaecati ex ipsum non excepturi consequatur perferendis! Facere itaque sequi ex, id est minus rem nisi quidem esse velit excepturi expedita praesentium nam voluptatem harum maiores placeat sunt alias suscipit temporibus labore doloribus vero maxime? Minus doloribus minima neque deserunt! Minus, asperiores. Eligendi blanditiis reprehenderit excepturi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident! Omnis officiis odit quaerat rerum nostrum, tempore commodi fugiat voluptate, doloribus, asperiores nemo nesciunt? Veniam, delectus hic quos illo nobis doloremque voluptatum debitis, earum dolorem voluptas dolore voluptatem. Qui quaerat facilis itaque beatae aliquid debitis totam quia consequuntur eligendi minus voluptates at odit animi, obcaecati ex ipsum non excepturi consequatur perferendis! Facere itaque sequi ex, id est minus rem nisi quidem esse velit excepturi expedita praesentium nam voluptatem harum maiores placeat sunt alias suscipit temporibus labore doloribus vero maxime? Minus doloribus minima neque deserunt! Minus, asperiores. Eligendi blanditiis reprehenderit excepturi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, provident! Omnis officiis odit quaerat rerum nostrum, tempore commodi fugiat voluptate, doloribus, asperiores nemo nesciunt? Veniam, delectus hic quos illo nobis doloremque voluptatum debitis, earum dolorem voluptas dolore voluptatem. Qui quaerat facilis itaque beatae aliquid debitis totam quia consequuntur eligendi minus voluptates at odit animi, obcaecati ex ipsum non excepturi consequatur perferendis! Facere itaque sequi ex, id est minus rem nisi quidem esse velit excepturi expedita praesentium nam voluptatem harum maiores placeat sunt alias suscipit temporibus labore doloribus vero maxime?.</p>
+      <img src="1.jpg" class="img1">
+       
+      <div id="btn_div">
+      <button id="btn">Top</button>
+      </div>
+      <script>
+          $('#btn').hide();
+          $(window).scroll(function(){
+            if($(this).scrollTop()>5){
+                $('#btn').show();
+            }
+            else{
+                $('#btn').hide();
+            }
+          });
+          $('#btn').click(function(){
+             document.documentElement.scrollTop=0;
+          })
+      </script>
+    
+</body>
+</html>

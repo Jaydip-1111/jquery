@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <style>
+                body{
+                       background-color: white;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                }
+                .input{
+                      padding: 10px;
+                      width: 120px;
+                }
+        </style>
+  </style>
+</head>
+<body>
+        
+         <label for="">Enter firstname</label>
+         <input type="text" id="txt" >
+         <br>
+         <label for="">Enter firstname</label>
+         <input type="text" id="txt2" >
+         <br>
+         <label for="">Enter firstname</label>
+         <input type="text" id="txt3" >
+         <br>
+         <script>
+                 $('#txt').click(function(){
+                    $('#txt,#txt2,#txt3').css('background-color','yellow');
+                 })
+                 
+              
+         </script>
+</body>
+</html>

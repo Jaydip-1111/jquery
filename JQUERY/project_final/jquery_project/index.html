@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery_final_project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css?v2022">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css?v2022">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='jquery.particleground.min.js'></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="fs32 c-lblack "><i class="fa-solid fa-mobile-screen c-green"></i> +012 345 6789
+            <p class="fram">FarmFresh</p>
+            <p class="icons">
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </p>
+        </div>
+        <div class="h1">
+            <div class="nav-menu">
+                <div class="menu">
+                    <div class="list">
+                        <li>
+                            <a href="#" class="menus">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menus">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menus">SERVICE</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menus">PRODUCT</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menus">PAGES<i class="fa-solid fa-arrow-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="">Blog Grid</a></li>
+                                <li><a href="">Blog Details</a></li>
+                                <li><a href="">Features</a></li>
+                                <li><a href="">The Team</a></li>
+                                <li><a href="">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menus">CONTACT</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="s1">
+        <div class="organic">
+            Organic Vegetables
+
+            <p class="better">
+                Organic Fruits For<br>Better Health
+            </p>
+            <div class="f1">
+                <p class="explore">EXPLORE</p>
+                <p class="contact">CONTACT</p>
+            </div>
+        </div>
+    </div>
+    <div class="s2">
+        <div class="f2">
+            <div class="t1">
+                <p class="g1">Organic vegetable</p>
+                <p class="d1">Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo<br> dolor, amet lorem diam no
+                    duo sed dolore amet diam</p>
+                <p class="read">Read More</p>
+            </div>
+
+            <div class="t2">
+                <p class="g1">Organic fruits</p>
+                <p class="d1">Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo<br> dolor, amet lorem diam no
+                    duo sed dolore amet diam</p>
+                <p class="read">Read More</p>
+            </div>
+        </div>
+        <div class="for">
+            <div class="table"></div>
+            <div class="about">ABOUT US
+                <p class="we">We Produce Organic<br>Food<br>For Your Family</p>
+                <p class="sit">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et<br>tempor sit. Clita
+                    erat ipsum etlorem et sit, sed stet no labore<br> lorem sit. Sanctus clita duo justo et tempor
+                    eirmod magna<br> dolore erat amet magna</p>
+                <i class="fa-solid fa-seedling about-icon fs80"></i>
+                <i class="fa-solid fa-award about-icon fs80"></i>
+                <p class="o1">100% Organic</p>
+                <p class="o2">Award Winning</p>
+                <p class="vero">Labore justo vero ipsum sit clita erat lorem<br> magna clita nonumy dolor magna dolor
+                    vero</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="s3">
+        <div class="flex">
+            <div>
+                <h1 id="num1">250</h1>
+                <h3>Projects</h3>
+            </div>
+            <div>
+                <h1 id="num2">435</h1>
+                <h3>Projects Done</h3>
+            </div>
+            <div>
+                <h1 id="num3">220</h1>
+                <h3>Happy Clients</h3>
+            </div>
+        </div>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> -->
+        <script src="res/countMe/countMe.min.js"></script>
+        <script>
+            window.onload = () => {
+                // $(selector).countMe(delay,speed)
+                $("#num1").countMe(40, 65);
+                $("#num2").countMe(30, 30);
+                $("#num3").countMe(40, 50);
+                $("#num4").countMe(100, 200);
+            }
+        </script>
+    </div>
+    <div class="s4">
+        <div class="table1">
+            <p class="service">service</p>
+            <p class="farm">Organic Farm<br>Services</p>
+            <p class="tempor">Tempor erat elitr at rebum at at clita. Diam dolor<br> diam ipsum et tempor sit. Clita
+                erat ipsum et<br> lorem et sit sed stet labore</p>
+        </div>
+
+        <div class="table1">
+            <i class="fa-solid fa-carrot service-icon fs80"></i>
+            <p class="frash">Fresh Vegetabels</p>
+            <p class="justo">Labore justo vero ipsum sit clita erat<br> lorem magna clita nonumy dolor<br> magna dolor
+                vero</p>
+
+        </div>
+        <div class="table1">
+            <i class="fa-solid fa-apple-whole service-icon fs80"></i>
+            <p class="frem">Fresh Fruits</p>
+            <p class="justo">Labore justo vero ipsum sit clita erat<br> lorem magna clita nonumy dolor<br> magna dolor
+                vero</p>
+        </div>
+    </div>
+
+    <div class="s5">
+        <div class="table2">
+            <i class="fa-solid fa-dog service-icon fs80"></i>
+            <p class="cattle">Healty Cattle</p>
+            <p class="justo">Labore justo vero ipsum sit clita erat<br> lorem magna clita nonumy dolor<br> magna dolor
+                vero</p>
+        </div>
+
+        <div class="table2">
+            <i class="fa-solid fa-tractor service-icon fs80"></i>
+            <p class="cattle">Modern Truck</p>
+            <p class="justo">Labore justo vero ipsum sit clita erat<br> lorem magna clita nonumy dolor<br> magna dolor
+                vero</p>
+        </div>
+
+        <div class="table2">
+            <i class="fa-solid fa-seedling service-icon fs80"></i>
+            <p class="cattle">Farming Plans</p>
+            <p class="justo">Labore justo vero ipsum sit clita erat<br> lorem magna clita nonumy dolor<br> magna dolor
+                vero</p>
+        </div>
+    </div>
+
+    <div class="s6">
+        <div class="product">Product
+            <p class="Our">Our Fresh & Organic<br>Products</p>
+        </div>
+
+        <div class="container">
+
+            <section class="regular slider">
+                <div>
+                    <img src="images/product-1.png" class="img">
+                </div>
+                <div>
+                    <img src="images/product-2.png" class="img">
+                </div>
+                <div>
+                    <img src="images/product-1.png" class="img">
+                </div>
+                <div>
+                    <img src="images/product-2.png" class="img">
+                </div>
+                <div>
+                    <img src="images/product-1.png" class="img">
+                </div>
+                <div>
+                    <img src="images/product-2.png" class="img">
+                </div>
+            </section>
+
+            <script src="./slick/slick.js?v2022" type="text/javascript" charset="utf-8"></script>
+            <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+            <script>
+                $(".regular").slick({
+                    dots: true,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                });
+            </script>
+        </div>
+    </div>
+    <div class="s7">
+        <section class="variable slider">
+
+            <div>
+                <img src="images/bg-product-1.png" class="imges">
+            </div>
+            <div>
+                <img src="images/bg-product-2.png" class="imges">
+
+            </div>
+            <div>
+                <img src="images/bg-product-1.png" class="imges">
+            </div>
+            <div>
+                <img src="images/bg-product-2.png" class="imges">
+            </div>
+            <div>
+                <img src="images/bg-product-1.png" class="imges">
+            </div>
+            <div>
+                <img src="images/bg-product-2.png" class="imges">
+            </div>
+
+        </section>
+        <script>
+            $(".variable").slick({
+                dots: true,
+                infinite: true,
+                variableWidth: true
+            });
+        </script>
+    </div>
+    <div class="s8">
+        <div class="blog">OUR BLOG<br><span class="post">Latest Articles From<br>Our Blog Post</span></div>
+        <div class="amet">
+            <div class="jan">
+
+            </div>
+            <div class="jan1">
+
+            </div>
+            <div class="jan2">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="s9">
+        <div class="the-team">THE TEAM<br><span class="we-are">We Are Professional<br>Organic Farmers</span></div>
+        <div class="name">
+            <div class="farmer-name">
+                <p class="f-name">Farmer Name</p>
+                <p class="design">Designation</p>
+            </div>
+            <div class="farmer-name farmer-name1">
+                <p class="f-name">Farmer Name</p>
+                <p class="design">Designation</p>
+            </div>
+            <div class="farmer-name farmer-name2">
+                <p class="f-name">Farmer Name</p>
+                <p class="design">Designation</p>
+            </div>
+        </div>
+    </div>
+    <div class="s10">
+        <div class="gg1">
+            <p class="get">Get In Touch</p>
+            <p class="location"> <i class="fa-sharp fa-solid fa-location-dot"></i>123 Street,New Yourk,USA</p>
+            <p class="email"><i class="fa-solid fa-envelope"></i>mail@domain.com</p>
+            <p class="call"><i class="fa-solid fa-phone"></i>+012 345 67890</p>
+            <p class="icons1">
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </p>
+        </div>
+        <div class="g1">
+            <p class="quick">Quick Links</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Home</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>About Us</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Our Services</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Meet The Team</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Latest Blog</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Contact Us</p>
+        </div>
+        <div class="g1">
+            <p class="populer">Popular Links</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Home</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>About Us</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Our Services</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Meet The Team</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Latest Blog</p>
+            <p class="home"><i class="fa-solid fa-arrow-right">&nbsp;&nbsp;</i>Contact Us</p>
+
+        </div>
+        <div class="g1 g2">
+            <p class="news">Newsletter</p>
+            <p class="sub">Subsribe Our Newsletter</p>
+            <p class="reburn">Amet justo diam dolor rebum lorem sit stet sea justo<br> kasd</p>
+            <input type="text" name="email" value="Your Email" id="box"><input type="button" name="button"
+                value="Sign in" id="btn">
+        </div>
+    </div>
+    <div class="backtotop" onclick="gettop()"><i class="fa-solid fa-arrow-up"></i></div>
+    
+    <script>
+        $(document).ready(function () {
+            $('.s11').particleground({
+                dotColor: '#5cbdaa',
+                lineColor: '#5cbdaa'    
+                
+            });
+
+        });
+    </script>
+    
+    <div class="backtotop" onclick="gettop()"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.header-media').click(function () {
+
+                $('header .menubar').toggle(2000);
+                $(this).toggleClass('fa-bars fa-xmark')
+            });
+
+
+        });
+        $('.drop').hide();
+        $('.backtotop').hide();
+
+        $('.dropdown').click(function () {
+            $('.drop').toggle();
+
+        });
+
+        $(window).scroll(function () {
+
+            if ($(this).scrollTop() > 100) {
+                $('.menubar').addClass('sticky');
+                $('.backtotop').show();
+            } else {
+                $('.menubar').removeClass('sticky');
+                $('.backtotop').hide();
+            };
+            if ($(this).scrollTop() > 100) {
+                $('header').addClass('sticky2');
+            } else {
+                $('header').removeClass('sticky2');
+            };
+
+
+        });
+
+        function gettop() {
+            document.documentElement.scrollTop = 0;
+
+        };
+
+
+
+    </script>
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+         crossorigin="anonymous"></script>
+            <script>
+$(document)
+  .mousemove(function(e) {
+    $('.cursor')
+      .eq(0)
+      .css({
+        left: e.clientX,
+        top: e.clientY
+      });
+      console.log("Clinet X = "+e.clientX);
+      console.log("Client Y = "+e.clientY);
+    setTimeout(function() {
+      $('.cursor')
+        .eq(1)
+        .css({
+          left: e.clientX,
+          top: e.clientY
+        });
+    }, 100);
+  })
+</script>
+
+   <!-- cursor pointer -->
+<div class="jquery-script-ads" align="center">
+    <script type="text/javascript">
+        google_ad_client = "ca-pub-2783044520727903";
+
+        google_ad_slot = "2780937993";
+        google_ad_width = 0;
+        google_ad_height = 0;
+
+
+    </script>
+    <script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="circle_cursor.js"></script>
+<script>
+    $('.box').circursor();
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+ <!-- cursor pointer end -->
+</body>
+
+</html>

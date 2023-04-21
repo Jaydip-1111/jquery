@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body { background-color:#1021d8; font-family:'Quicksand'; color:#00dd9a;}
+            .container { width: 50%; margin: 20px auto; text-align: center; }
+            #pageLoad, #clickEvent, input { font-size: 30px; }
+            input { text-align: center; }
+            #clickEvent:hover { cursor: pointer; }
+        </style>
+   
+    <script src="jquery.animateNumbers.min.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.animateNumbers.js"></script>
+    <script>
+        $(document).ready(function() {
+           
+            $("#pageLoad").animateNumbers(4321, true, 2000);
+            
+            $("#clickEvent").on("click", function() {
+                $(this).animateNumbers(1234, false);
+            });
+            
+            $("#num_input").animateNumbers(4321);
+            $("#num_input2").animateNumbers(4321, false, 2000, "linear");
+            $("#num_input3").animateNumbers(4321, true, 2000, "linear");
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>This number will animate on click:</p>
+        <div id="clickEvent">4321</div>
+    </div>
+    <div class="container">
+        <p>Text input with comma:</p>
+        <input id="num_input" value="1234" class="form-control" />
+    </div>
+    <div class="container">
+        <p>Text input without comma:</p>
+        <input id="num_input2" value="1234" class="form-control" />
+    </div>
+    <div class="container">
+        <p>Number input:</p>
+        <input type="number" id="num_input3" value="1234" class="form-control" />
+    </div>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      
+      </script>
+</body>
+</html>

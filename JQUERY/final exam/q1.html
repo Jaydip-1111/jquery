@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final exam</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <style>
+              .t1{
+                    border: 1px;
+              }
+        </style>
+  
+</head>
+
+<body>
+      <form action="">
+            <label for="">Name:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+            <br><br>
+    
+            <label for="">Gender:</label>
+            <input type="radio" id="g1" name="g1" value="male">male
+            <input type="radio" id="g2" name="g2" value="female">Female
+            <br><br>
+            <label for="">Age</label>
+            <input typer="number" id="age" name="age">
+            <br><br>
+            <input type="button" value="save" name="btn1" id="btn1">
+        </form>
+        <br>
+        <table border="1" id="userData">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+        </table>
+       
+        <script>
+            $('#btn1').click(function () {
+                var name = $('#username').val();
+                var age = $('#age').val();
+                var gender = $('#g1').val();
+    
+                $('#userData').append('<tr><td>' + name + '</td><td>' + age + '</td><td>' + gender + '</td></tr>');
+                $('#username').val();
+                $('#age').val();
+                $('#g1').val();
+            })
+            $('#btn2').scroll(function(){
+               $('')
+            })
+        </script>
+          
+</body>
+
+</html>

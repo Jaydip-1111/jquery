@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js" ></script>
+    <style>
+         .txt-color-yellow{
+            color: rgb(6, 10, 255);
+            font-family: bold;
+            font-size: 30px;
+}
+    </style>
+</head>
+<body>
+         <p id="txt">Hello</p>
+         <input type="button" name="btn" id="btn" value="Click">
+         <input type="button" name="btn1" id="btn1" value="Toggle"> 
+         <input type="button" name="btn2" id="btn2" value="Text" onclick="changeBackground()">
+
+         <button type="button" name="btn3" id="btn3">Show</button>
+         <button type="button" name="btn4" id="btn4">Hide</button>
+        
+         <script>
+             $('#btn').click(function(){
+            //    $('#txt').css('color','blue');
+            $('#txt').addClass('txt-color-yellow');
+             });
+
+             $('#btn').dblclick(function(){
+                // $('#txt').css('color','red');
+                $('#txt').removeClass('txt-color-yellow');
+             })
+             $('#btn1').on('click',function(){
+                $('#txt').removeClass('txt-color-yellow');
+             });
+
+             function changeBackground(){
+                $('#txt').css('background-color','red');
+             }
+
+             $('#btn3').on('click',function(){
+                $('#txt').show();
+             })
+
+             $('#btn4').on('click',function(){
+                $('#txt').hide();
+             })
+
+
+
+         </script>
+         
+</body>
+</html>

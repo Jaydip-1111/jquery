@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="header.css">
+    <script src="jquery-3.6.4.min.js"></script>
+</head>
+<body>
+         <header>
+              <ul>
+                  <li>Home</li>
+                  <li>Works</li>
+                  <li>Blog</li>
+                  <li>Join Us</li>
+                  <li>About</li>
+              </ul>
+         </header>
+           <div class="text"></div>
+           <div class="img"></div>   
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officiis quibusdam a accusantium saepe quae laborum, ratione illo nobis pariatur nemo eius exercitationem excepturi architecto minus neque asperiores magni amet nulla. Quia voluptas quod, commodi voluptatibus architecto qui reiciendis earum possimus ipsam dolor facilis libero eaque provident sunt? Ratione mollitia, voluptatibus totam voluptate sint rerum, aliquam repellat quibusdam laborum tempore temporibus ipsum, dicta at. Aut itaque dignissimos incidunt! Rem delectus amet doloremque quos doloribus culpa dolore beatae a sequi! Minima illum quasi sequi. Recusandae quas neque optio repudiandae, ullam dolorum placeat culpa? Nam in voluptates, quisquam at minus voluptatem. Architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officiis quibusdam a accusantium saepe quae laborum, ratione illo nobis pariatur nemo eius exercitationem excepturi architecto minus neque asperiores magni amet nulla. Quia voluptas quod, commodi voluptatibus architecto qui reiciendis earum possimus ipsam dolor facilis libero eaque provident sunt? Ratione mollitia, voluptatibus totam voluptate sint rerum, aliquam repellat quibusdam laborum tempore temporibus ipsum, dicta at. Aut itaque dignissimos incidunt! Rem delectus amet doloremque quos doloribus culpa dolore beatae a sequi! Minima illum quasi sequi. Recusandae quas neque optio repudiandae, ullam dolorum placeat culpa? Nam in voluptates, quisquam at minus voluptatem. Architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officiis quibusdam a accusantium saepe quae laborum, ratione illo nobis pariatur nemo eius exercitationem excepturi architecto minus neque asperiores magni amet nulla. Quia voluptas quod, commodi voluptatibus architecto qui reiciendis earum possimus ipsam dolor facilis libero eaque provident sunt? Ratione mollitia, voluptatibus totam voluptate sint rerum, aliquam repellat quibusdam laborum tempore temporibus ipsum, dicta at. Aut itaque dignissimos incidunt! Rem delectus amet doloremque quos doloribus culpa dolore beatae a sequi! Minima illum quasi sequi. Recusandae quas neque optio repudiandae, ullam dolorum placeat culpa? Nam in voluptates, quisquam at minus voluptatem. Architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officiis quibusdam a accusantium saepe quae laborum, ratione illo nobis pariatur nemo eius exercitationem excepturi architecto minus neque asperiores magni amet nulla. Quia voluptas quod, commodi voluptatibus architecto qui reiciendis earum possimus ipsam dolor facilis libero eaque provident sunt? Ratione mollitia, voluptatibus totam voluptate sint rerum, aliquam repellat quibusdam laborum tempore temporibus ipsum, dicta at. Aut itaque dignissimos incidunt! Rem delectus amet doloremque quos doloribus culpa dolore beatae a sequi! Minima illum quasi sequi. Recusandae quas neque optio repudiandae, ullam dolorum placeat culpa? Nam in voluptates, quisquam at minus voluptatem. Architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officiis quibusdam a accusantium saepe quae laborum, ratione illo nobis pariatur nemo eius exercitationem excepturi architecto minus neque asperiores magni amet nulla. Quia voluptas quod, commodi voluptatibus architecto qui reiciendis earum possimus ipsam dolor facilis libero eaque provident sunt? Ratione mollitia, voluptatibus totam voluptate sint rerum, aliquam repellat quibusdam laborum tempore temporibus ipsum, dicta at. Aut itaque dignissimos incidunt! Rem delectus amet doloremque quos doloribus culpa dolore beatae a sequi! Minima illum quasi sequi. Recusandae quas neque optio repudiandae, ullam dolorum placeat culpa? Nam in voluptates, quisquam at minus voluptatem. Architecto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officiis quibusdam a accusantium saepe quae laborum, ratione illo nobis pariatur nemo eius exercitationem excepturi architecto minus neque asperiores magni amet nulla. Quia voluptas quod, commodi voluptatibus architecto qui reiciendis earum possimus ipsam dolor facilis libero eaque provident sunt? Ratione mollitia, voluptatibus totam voluptate sint rerum, aliquam repellat quibusdam laborum tempore temporibus ipsum, dicta at. Aut itaque dignissimos incidunt! Rem delectus amet doloremque quos doloribus culpa dolore beatae a sequi! Minima illum quasi sequi. Recusandae quas neque optio repudiandae, ullam dolorum placeat culpa? Nam in voluptates, quisquam at minus voluptatem. Architecto!</p>
+          
+           <button id="btn">TOP</button>
+           <script>
+            $('#btn').hide();
+            $(window).scroll(function(){
+              if($(this).scrollTop()>5){
+                  $('#btn').show();
+              }
+              else{
+                  $('#btn').hide();
+              }
+            });
+            $('#btn').click(function(){
+               document.documentElement.scrollTop=0;
+            })
+        </script>
+  <script>
+   
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 1){
+            $('header').addClass('sticky');
+        }else {
+            $('header').removeClass('sticky');
+        }
+    });
+  </script>
+
+</body>
+</html>

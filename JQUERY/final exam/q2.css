@@ -1,0 +1,44 @@
+.table{
+          height: 700px;
+          width: 800px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-content: space-evenly;
+          margin: auto;
+}
+#btn1{
+       height: 100px;
+       width: 100px;
+       border: 1px solid black;
+       border-radius: 50px;
+       background-color: aquamarine;
+}
+#btn2{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: blue;
+}
+#btn3{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: deeppink;
+}
+#btn4{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: darkblue;
+}
+#btn5{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: orangered;
+}
